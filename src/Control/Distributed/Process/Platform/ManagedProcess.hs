@@ -150,7 +150,7 @@
 --
 -- /Example: How to annoy your supervisor and end up force-killed:/
 --
--- > handleExit  (\state from (sigExit :: Shutdown) -> continue s)
+-- > handleExit  (\state from (sigExit :: Shutdown) -> continue state)
 --
 -- That code is, of course, very silly. Under some circumstances, handling
 -- exit signals is perfectly legitimate. Handling of /other/ forms of
